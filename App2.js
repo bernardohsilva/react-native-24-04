@@ -1,7 +1,5 @@
 import React, { useState } from 'react';
 import { StyleSheet, View, TextInput, TouchableOpacity, Text, ImageBackground } from 'react-native';
-import App2 from './App2';
-import App3 from './App3';
 
 export default function App() {
   const [email] = useState('');
@@ -14,9 +12,14 @@ export default function App() {
   return (
     <ImageBackground source={{ uri: 'https://assets.codepen.io/1468070/Roblox+Background.jpg' }} style={styles.background}>
       <View style={styles.container}>
-       <App2/>
-
-       <App3/>
+        <Text style={styles.title}>ROBLOX</Text>
+        <TouchableOpacity style={styles.button1} onPress={handleLogin}>
+          <Text style={styles.buttonText1}>Sign Up</Text>
+        </TouchableOpacity>
+        <TouchableOpacity style={styles.button2} onPress={() => {}}>
+          <Text style={styles.buttonText2}>Log In</Text>
+        </TouchableOpacity>
+        <Text style={styles.forgotPasswordText}>Terms - Privacy?</Text>
       </View>
     </ImageBackground>
   );
