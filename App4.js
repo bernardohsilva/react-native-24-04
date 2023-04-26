@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { StyleSheet, View, TextInput, TouchableOpacity, Text, ImageBackground } from 'react-native';
+import Icon from 'react-native-vector-icons/FontAwesome';
 
 export default function App() {
   const [email, setEmail] = useState('');
@@ -15,6 +16,8 @@ export default function App() {
           <View style={styles.container2}>    
           <Text style={styles.title}>ROBLOX</Text> 
           </View>
+              <View>
+    </View>
       <View style={styles.card}>
       <View style={styles.container}>
         <Text style={styles.text2}>CADASTRE-SE E DIVIRTA-SE!</Text>
@@ -64,10 +67,14 @@ export default function App() {
           </View>
           <View style={styles.buttonContainer}>
             <TouchableOpacity style={styles.button1} onPress={handleLogin}>
-              <Text style={styles.buttonText1}>Log In</Text>
+              <Text style={styles.buttonText1}>
+              <Icon name="female"  size={20} color="white" />
+              </Text>
             </TouchableOpacity>
-            <TouchableOpacity style={styles.button2} onPress={handleLogin}>
-              <Text style={styles.buttonText2}>Log In</Text>
+            <TouchableOpacity style={styles.button1} onPress={handleLogin}>
+              <Text style={styles.buttonText1}>
+              <Icon name="male"  size={20} color="white" />
+              </Text>
             </TouchableOpacity>
           </View>
           <Text style={styles.forgotPasswordText}>Ao clicar em Cadastrar-se, você aceita os Termos de Uso 
@@ -90,9 +97,9 @@ const styles = StyleSheet.create({
   },
   card: {
     flex: 1,
-    backgroundColor: 'rgba(0,0,0,0.6)',
+    backgroundColor: '#222427',
     borderRadius: 10,
-    margin: 30,
+    margin: 20,
     marginBottom: 100,
     marginTop: 100,
     padding: 20,
@@ -134,36 +141,36 @@ const styles = StyleSheet.create({
     width: '100%',
   },
   input: {
-    backgroundColor: 'transparent',
     padding: 10,
     width: '30%',
     fontSize: 10,
     fontWeight: 'bold',
     borderWidth: 1,
-    borderColor: 'grey',
-    color: 'grey'
+    borderColor: 'lightgrey',
+    color: 'lightgrey',
+    backgroundColor:'black',
   },
   input1: {
-    backgroundColor: 'transparent',
     padding: 10,
     margin: 10,
     width: '105%',
     fontSize: 10,
     fontWeight: 'bold',
     borderWidth: 1,
-    borderColor: 'grey',
-    color: 'grey'
+    borderColor: 'lightgrey',
+    color: 'lightgrey',
+    backgroundColor:'black',
   },
     input2: {
-    backgroundColor: 'transparent',
     padding: 10,
     margin: 10,
     width: '105%',
     fontSize: 10,
     fontWeight: 'bold',
     borderWidth: 1,
-    borderColor: 'grey',
-    color: 'grey'
+    borderColor: 'lightgrey',
+    color: 'lightgrey',
+    backgroundColor:'black',
   },
   buttonContainer: {
     flexDirection: 'row',
@@ -173,43 +180,32 @@ const styles = StyleSheet.create({
     marginTop: 10,
   },
   button1: {
+    flex: 1,
     alignItems: 'center',
-    backgroundColor: 'white',
+    backgroundColor:'black',
     padding: 10,
-    width: '47%',
+    width: '70%',
     borderWidth: 1,
-    borderColor: 'white',
+    borderColor: 'lightgrey',
+    justifyContent: 'center,'
   },
   buttonText1: {
     fontSize: 16,
     color: 'grey',
-    fontWeight: '500',
   },
-  button2: {
-    alignItems: 'center',
-    backgroundColor: 'white',
-    padding: 10,
-    width: '47%',
-    borderWidth: 1,
-    borderColor: 'white',
-  },
-  buttonText2: {
-    fontSize: 16,
-    color: 'grey',
-    fontWeight: 500,
-  },
+
   forgotPasswordText: {
     marginTop: 10,
-    color: 'white',
+    color: 'lightgrey',
     fontSize: 10,
   },
     button3: {
     alignItems: 'center',
-    backgroundColor: 'white',
+    backgroundColor: 'lightgrey',
     padding: 10,
     width: '55%',
     borderWidth: 1,
-    borderColor: 'white',
+    borderColor: 'lightgrey',
     marginTop: 20,
   },
   buttonText3: {
