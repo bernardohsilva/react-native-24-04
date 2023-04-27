@@ -2,6 +2,8 @@ import React, { useState } from 'react';
 import { StyleSheet, View, TextInput, TouchableOpacity, Text, ImageBackground } from 'react-native';
 import App2 from './App2';
 import App3 from './App3';
+import App4 from './App4';
+import App5 from './App5';
 
 export default function App() {
   const [email] = useState('');
@@ -17,6 +19,10 @@ export default function App() {
        <App2/>
 
        <App3/>
+        
+       <App4/>
+        
+       <App5/>
       </View>
     </ImageBackground>
   );
